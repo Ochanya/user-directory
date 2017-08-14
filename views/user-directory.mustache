@@ -6,19 +6,21 @@
     <title>User Directory</title>
   </head>
   <body>
-    <h1>User Directory</h1>
+    <h1 class="header">User Directory</h1>
     <div class="container">
     {{ #users}}
-      <div>
         <div class="user-box">
-            <img src="{{avatar}}" alt="">
+          <a href="/{{username}}"><img src="{{avatar}}" alt=""></a>
             <div class="">
               <h1>{{name}}</h1>
-              <span>{{job}}</span>
-              <span>{{company}}</span>
+              {{#job}}
+              <span>{{job}}</span><span>{{company}}</span>
+              {{/job}}
+              {{^job}}
+              <span>Available for Hire.</span>
+              {{/job}}
             </div>
         </div>
-      </div>
     {{ /users}}
     </div>
   </body>

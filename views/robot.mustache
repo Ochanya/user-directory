@@ -6,23 +6,18 @@
     <title>User Directory</title>
   </head>
   <body>
-    <h1>User Directory</h1>
-    <div class="container">
-    {{ #users}}
-      <div>
+    <!-- <h1>User Directory</h1> -->
+{{#users}}
+    <div class="">
         <div class="user">
-            <img src="{{avatar}}" alt="">
+            <img class = "profile-img" src= "{{avatar}}" alt="user avatar picture">
+        </div>
             <div class="">
               <h1>{{name}}</h1>
               <span>{{address.city}}, {{address.country}}  | {{job}}, {{company}}</span>
               <span>{{email}} | {{phone}}</span>
-          </div>
-        </div>
-        <div class="user">
-        edu  
-        </div>
-      </div>
-    {{ /users}}
+           </div>
     </div>
+    {{/users}}
   </body>
 </html>

@@ -2,30 +2,39 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .user-box{
   border: 1px solid grey;
-  width:80%;
+  width:20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   padding: 15px;
   text-transform: capitalize;
-  border-radius: 5px
+  border-radius: 5px;
+  margin:10px;
+
+}
+.user-box img {
+  width :100%;
+}
+.profile-img{
 
 }
 .user{
   width: 80%;
   margin: 0 auto;
   display: flex;
-  /*padding-bottom: 40px;*/
+  /*padding-bottom: 40px;*/flex: 1;
+  /*border-radius: 50%;
+  border: 1px solid   grey;*/
 }
 
 .user img{
-  flex: 1;
   border-radius: 50%;
   border: 1px solid grey;
 
@@ -33,4 +42,7 @@
 .user div{
   flex:2;
   padding-left: 20px;
+}
+.header{
+  text-align: center;
 }
